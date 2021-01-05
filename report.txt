@@ -1,0 +1,73 @@
+Rapport 
+Skriv en sammanhängande text där du beskriver hur och varför du använde olika Git-kommandon i din inlämningsuppgift.
+	Nedan punkter ska du använda dig av för att skriva din rapport.
+	
+•	Beskriv hur du använde dig av Git i inlämningsuppgiften.
+	Vilka Git-kommandon använde du och varför? 
+ 
+•	Vad är fördelen med att använda sig av pull requests när man arbetar i ett team av systemutvecklare?
+	
+•	Varför är det viktigt att använda sig av versionshantering?
+	Vad var fördelarna i förhållande till inlämningsuppgiften?
+	Vad är fördelarna med versionshantering och Git mer generellt sett?
+
+---------------
+# Rapport
+För att versionshantera detta inlämningsprojekt så började med att skapa
+ett nytt repo på GitHub, "DevOps-Versionshantering".
+I samband med detta så skapades också den första committen där Readme.md
+ingick. Https-länken till detta repo använde jag sedan för att skapa en
+lokal kopia på min dator med kommandot
+"git clone https://github.com/kthure01/DevOps-Versionshantering.git".
+När jag använder "git clone" så slipper jag en del kommandon som
+t.ex "git init", "git remote" osv. I den nyskapade foldern,
+"DevOps-Versionshantering", så adderade jag 5 st nya filer,
+__main__.py
+Inlämningsuppgift - Versionshantering - v01.docx
+Inlämningsuppgift_och_rapport_versionshantering.docx
+questions.txt
+report.txt
+
+När detta var gjort så körde jag "git add --all" för att lägga till filerna
+i mitt repo. Därefter så körde jag "git commit -m "First commit"" för
+att på så sätt "frysa" statusen på mitt repo. En commit "frysen" ändringarna
+så att man sedan kan backa tillbaka projektet om det skulle behövas.
+I och med att man också skriver in ett meddelande så får man en beskrivning
+av vad som är ändrat.
+
+Sedan så skapade jag en ny branch med "git checkout -b important-changes".
+Detta kommando skapar en ny branch och man hamnar sedan där per automatik.
+Det är bra att skapa en ny branch om man ska implementera något nytt.
+Visar det sig att detta inte blir bra så är det bara att "kasta" bort den sedan.
+
+I denna branch så gjorde jag en ändring i __main__.py.
+Efter att ha kört "git add", "git commit" så körde jag "git push -u origin important-changes" för
+att skicka upp ändringarna till GitHub.
+
+På GitHub skapade jag en "pull request" för att merga in branchen till min
+master branch. En "pull request" är ett sätt att merga in förändringar 
+i en branch till en annan branch.
+
+Lars S. har också gjort en ändring i mitt projekt och skapat en "pull request"
+som jag sedan godkände. Samtidigt har jag gjort en ändring i hans projekt.
+
+Fördelen med att använda en "pull request" i ett team med utvecklare är
+att man t.ex kan sätta upp systemet så att någon annan måste godkänna en request.
+Detta kan vara ett sätt att kvalitetssäkra koden.
+
+Att använda sig av versionhantering är ett sätt att dokumentera hur
+koden utvecklas över tid. Det är också bra att använda för att t.ex
+backa tillbaka till ett läge där allt fungerar om det visar sig att
+någon ny del i koden falerar av någon anledning. Att använda git och GitHub
+gör att många utvecklare kan arbeta med koden parallellt och att koden
+är tillgänglig från vilken dator som helst där man har internetanslutning.
+
+Detta var en nyttig övning i lärandet för att få en inblick i hur
+git och GitHub fungerar tillsammans och att få se hur det ser ut när någon
+annan gör ändringar i koden och man ska agera på en "pull request"
+
+
+
+
+
+

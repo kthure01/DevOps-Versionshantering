@@ -1,0 +1,41 @@
+Frågor
+ 1. Vad menas med versionshantering?
+	* Det är ett sätta att spara en historik över ändringar som gjorts på filer i ett projekt.
+		Det kan även göra det möjligt att backa till valfri version av projektet.
+	
+ 2. Vad menas med en “merge” ?
+	* Det är när man sammanfogar ändringar i en branch med en annan branch, t.ex till master-branchen.
+	
+ 3. Om du vill merga ihop två brancher från terminalen, hur gör du då?
+	* 1) Skapa en ny branch t.ex b1 med "git checkout -b b1 master"
+	* 2) Gör dina ändringar och kör "git add --all" och "git commit -m "msg"".
+	* 3) Kör "git checkout master" för att byta branch och sedan "git merge b1".
+			Vill du ta bort branchen kör du "git branch -d b1"
+		Då har du mergat b1 med master om allt gått väl.
+	
+ 4. Nämn ett alternativ till Git.
+	* Apaches Subversion, svn, är ett av flera olika versionshanteringssystem.
+	
+ 5. Är Git ett verktyg som erbjuds av Github, eller kan man använda Git på andra ställen?
+	* Github använder sig av git men det är inte de som utvecklat git. Ja, git kan användas på andra ställen.
+	
+ 6. Vad menas med en “merge conflict” och när kan det uppstå?
+	* En merge-konflikt kan uppstå när flera personer har ändrat samma rad i en fil eller när någon
+		ändrat en fil och någon annat har tagit bort filen.
+	
+ 7. Om du vill se en lista med tidigare ändringar / commits i ett Git repo via terminalen, vad skriver du?
+	* git log
+	
+ 8. När du skriver “git init” i en mapp, på vilket sätt ändras då mappen?
+	* Det skapas ett tomt repository, en .git folder med innehåll.
+		Det skapas även en ny branch, master, utan några commits.
+	
+ 9. Varför vill man dela ibland upp sina ändringar i separata “brancher”?
+	* När man ändrar/lägger till något nytt så är det bra att använda sig av brancher. Man jobbar då i en
+		isolerad del som inte påverkar master branch. När allt är testat och klart kan man sedan merga in
+		ändringen i master branch.
+	
+10. Nämn ett Git command som inte gör några förändringar på remote servern (Github är tex en remote server), Nämn även ett Git command som gör förändringar på remote servern.
+	* git status visar status på den lokala kopian av ett repository.
+	* git push skickar upp de lokala ändringarna, commits, till remote servern.
+	
