@@ -1,2 +1,2 @@
-# DevOps-Versionshantering
-Repo för inlämningsuppgift angående versionhantering
+# DevOps-Versionshantering med git och GitHub
+Repo för inlämningsuppgift rörande versionhantering med git och GitHub.
