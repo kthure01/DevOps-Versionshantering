@@ -13,7 +13,7 @@ Skriv en sammanhängande text där du beskriver hur och varför du använde olik
 
 ---------------
 # Rapport
-För att versionshantera detta inlämningsprojekt så började med att skapa
+För att versionshantera detta inlämningsprojekt så började jag med att skapa
 ett nytt repo på GitHub, "DevOps-Versionshantering".
 I samband med detta så skapades också den första committen där Readme.md
 ingick. Https-länken till detta repo använde jag sedan för att skapa en
@@ -30,7 +30,7 @@ report.txt
 
 När detta var gjort så körde jag "git add --all" för att lägga till filerna
 i mitt repo. Därefter så körde jag "git commit -m "First commit"" för
-att på så sätt "frysa" statusen på mitt repo. En commit "frysen" ändringarna
+att på så sätt "frysa" statusen på mitt repo. En commit "fryser" ändringarna
 så att man sedan kan backa tillbaka projektet om det skulle behövas.
 I och med att man också skriver in ett meddelande så får man en beskrivning
 av vad som är ändrat.
